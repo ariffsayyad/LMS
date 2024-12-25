@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding-bottom: 1px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-self: auto;
+  padding: 0px 20px 0px 10px;
+  background: linear-gradient(90deg, #efd5ff 0%, #3844ec 100%);
+  font-size: 18px;
+}
+.nav > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.elements {
+  width: 24%;
+  display: flex;
+  align-items: center;
+}
+.elements img {
+  width: 90px; /* Logo size */
+  height: 60px;
+  margin-right: 20px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  padding: 24px 0;
+  margin-right: 15px;
+}
+a:hover {
+  color: #4f46e5; /* Hover color */
+}
+
+.nav a.active {
+  border-bottom: 3px solid #4f46e5;
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+.active {
+  border-bottom: 3px solid #4f46e5;
+}
+.title {
+  padding: 16px 60px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1.95px 1.95px 2.6px;
+}
+.section {
+  width: 80%;
+  background-color: white;
+  margin: 50px auto;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+}
+.add {
+  width: 80%;
+  background-color: white;
+  margin: 50px auto;
+  padding: 22px;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.details > span {
+  color: #0d00ff;
+  font-size: 20px;
+}
+.details > span:hover {
+  text-decoration: underline 1.5px solid #4f46e5;
+}
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 22px 30px;
+  border-bottom: 0.5px solid rgb(214, 206, 206);
+  font-size: 18px;
+}
+.heading > p {
+  width: 100%;
+  text-align: start;
+}
+.type {
+  padding: 4px 7px;
+  background-color: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+.details {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 22px 30px;
+  border-bottom: 0.5px solid rgb(214, 206, 206);
+  font-size: 18px;
+}
+.details > p {
+  width: 100%;
+  font-size: 14px;
+  text-align: start;
+  color: #4f46e5;
+}
+.details > div {
+  width: 100%;
+  text-align: center;
+}
+#remove {
+  width: 40%;
+  background-color: rgb(205, 5, 5);
+  padding: 5px;
+  color: white;
+  border-radius: 3px;
+}
+form {
+  margin-top: 14px;
+  padding: 24px;
+  background-color: rgb(240, 236, 236);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  /* justify-content: space-evenly; */
+}
+input,
+select {
+  padding: 7px 12px;
+  font-size: 14px;
+  
+  padding: 7px 12px;
+  width: 100%;
+  margin-right: 5px;
+  border-radius: 6px;
+  border: 1px solid rgb(174, 174, 177);
+}
+form > button {
+  padding: 7px 15px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-weight: 600;
+  align-self: center;
+}
+.guest {
+  margin-right: 40px;
+}
+
+
+
+.details > span {
+  color: #4f46e5;
+  font-size: 20px;
+}
+
+.details > span:hover {
+  text-decoration: underline 1.5px solid #4f46e5;
+}
+
+.details > p {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.type {
+  padding: 4px 7px;
+  background-color: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.active {
+  border-bottom: 3px solid #4f46e5;
+}
+
+html {
+  height: 100%;
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  position: fixed;
+  top: 0;
+  left: -50%;
+  right: -50%;
+  bottom: 0;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 800px) {
+  .nav {
+    flex-direction: column;
+  }
+  
+
+  .elements {
+    margin-bottom: 10px;
+  }
+
+  .elements img {
+    width: 80px; /* Resize logo */
+  }
+
+  a {
+    padding: 15px 10px; /* Adjust padding */
+    margin-right: 10px; /* Adjust spacing */
+  }
+
+  .add {
+    width: 95%; /* Take up more width on smaller screens */
+  }
+
+  form > div {
+    flex: 1 1 100%; /* Stack form fields vertically on small screens */
+  }
+
+  form {
+    padding: 16px; /* Adjust padding on smaller screens */
+  }
+
+  label {
+    font-size: 14px; /* Adjust label font size */
+  }
+
+  input,
+  select {
+    font-size: 16px; /* Make input text slightly larger on mobile */
+  }
+}

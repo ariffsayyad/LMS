@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Lectures</title>
+   <link rel="stylesheet" href="./Styles/lecture.css">
+  </head>
+  <body>
+
+
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+
+    <div class="nav">
+      <div class="elements">
+        <img src="./images/1.png" alt="" />
+        <a href="./admin.html"><p>Users</p></a>
+        <a href="#" class="active"><p>Lectures</p></a>
+        <a href="./adminAssignments.html"><p>Assignments</p></a>
+      </div>
+      <div>
+        <div class="guest"></div>
+        <a href="./index.html">Logout</a>
+      </div>
+    </div>
+    <div class="title">
+      <h2>Lectures</h2>
+    </div>
+    <div class="add">
+      <p>Add lectures</p>
+      <form>
+        <div>
+          <label for="title">Title</label><br />
+          <select id="title">
+            <option value="Classes">Classes</option>
+            <option value="Basic of designing">Basic of designing</option>
+            <option value="Basic of uiux designing">Basic of uiux designing</option>
+            <option value="Basic of Web Designing">Basic of Web Designing</option>
+            <option value="Basic of App Designing">Basic of App Designing</option>
+            <option value="Layouts">Layouts</option>
+            <option value="Framework">Framework</option>
+            <option value="Prototype">Prototype</option>
+          </select>
+        </div>
+        <div>
+          <label for="type">Type</label><br />
+          <select id="type">
+            <option value="LIVE">Live</option>
+            <option value="VIDEO">Video</option>
+          </select>
+        </div>
+        <div>
+          <label for="category">Category</label><br />
+          <select id="category">
+            <option value="coding">Coding</option>
+            <option value="Designing">Designing</option>
+          </select>
+        </div>
+        <div>
+          <label for="instructor">Instructor</label><br />
+          <select id="instructor">
+            <option value="Ariff">Ariff</option>
+          </select>
+        </div>
+        <div>
+          <label for="description">Description</label><br />
+          <input type="text" id="description" />
+        </div>
+        <div>
+          <label for="link">Link</label><br />
+          <input type="text" id="link" />
+        </div>
+
+        <div>
+          <label for="duration">Duration</label><br />
+          <input type="text" id="duration" />
+        </div>
+
+        <div>
+          <label for="time">Time</label><br />
+          <input type="time" id="time" />
+        </div>
+        <div>
+          <label for="schedule">Scheduled</label><br />
+          <input type="date" id="schedule" />
+        </div>
+        <div>
+          <label for="add">Add lecture</label><br />
+          <button onclick="addLecture()">Add</button>
+        </div>
+      </form>
+    </div>
+    <div class="section">
+      <div class="lectures"></div>
+    </div>
+  </body>
+</html>
+<script src="./Scripts/lecture.js"></script>
